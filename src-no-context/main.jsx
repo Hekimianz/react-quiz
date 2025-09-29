@@ -1,13 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { QuestionsProvider } from './contexts/QuizContext.jsx';
 import './styles/index.css';
 import App from './App.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <QuestionsProvider>
-      <App />
-    </QuestionsProvider>
+    <App />
   </StrictMode>
 );
